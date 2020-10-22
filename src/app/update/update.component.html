@@ -1,0 +1,19 @@
+<<div class="fixed-header">
+  <h4>Philips Subscriber Platform</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <form method="put" action="">
+    <h4>Enter Product Details to be updated</h4>
+   
+      <p><input [(ngModel)]="productid" type="text" name="update product id" value="" placeholder="Product id" required></p>
+      <p><input [(ngModel)]="productname" type="text" name="update product name" value="" placeholder="Product name" required></p>
+     
+      <p class="submit"><button (click)="UpdateProduct()" value="Update Products">Update Products</button></p>
+    </form>
+</div>
+<div class="fixed-footer">    
+</div>

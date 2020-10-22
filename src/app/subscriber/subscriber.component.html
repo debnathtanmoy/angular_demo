@@ -1,0 +1,32 @@
+<div class="fixed-header">
+    <h4>Philips Subscriber Platform</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <form method="post" action="">
+    <h4>Enter Product Details</h4>
+   
+      <p><input [(ngModel)]="productid" type="text" name="add productid" value="" placeholder="Product id" required></p>
+      <p><input [(ngModel)]="productname" type="text" name="add productname" value="" placeholder="Product name" required></p>
+     
+      <p class="submit"><button (click)="AddProduct()" value="Add Produts">Add Products</button></p>
+    </form>
+</div>
+
+<div class="container">
+  <form method="post" action="">
+  <h4>Upload Product Pic</h4>
+ 
+    <p><input type="file" id="myFile"/></p>
+    <p class="submit"><button (click)="addFile()">Add</button></p>
+  </form>
+</div>
+<div class="fixed-footer">    
+</div>
+
+
+

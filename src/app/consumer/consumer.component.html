@@ -1,0 +1,38 @@
+<div class="fixed-header">
+  <h4>Philips Consumer Platform</h4>
+</div>
+<body>
+  
+<ng-container *ngFor="let val of value;let i=index" >
+  <div >
+    <img src={{val}} height="150px" ><br>
+    <p>{{object[i].productId}}</p>
+    <p>{{object[i].productName}}</p>
+</div>
+
+</ng-container>
+<div class="vertical-center">
+  <button (click)="getProducts()" value="Submit">Get Product Details</button>
+</div>
+<button class="open-button" (click)="openForm()">Contact Us</button>
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>Share Details of Interested Product</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input [(ngModel)]="emailid" type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>ProductId</b></label>
+    <input [(ngModel)]="productid" type="text" placeholder="Enter ProductId" name="product" required>
+    <h6>* for more than one product enter more than one id separated by a space</h6>
+    <button type="submit" class="btn" (click)="detailssubmitted()">Submit</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+ </body>
+
+<div class="fixed-footer">    
+</div>

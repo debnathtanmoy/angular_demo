@@ -1,0 +1,19 @@
+<div class="fixed-header">
+  <h4>Philips Subscriber Platform</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <form method="delete" action="">
+    <h4>Enter Product Details to be deleted</h4>
+   
+      <p><input [(ngModel)]="productid" type="text" name="delete product id" value="" placeholder="Product id" required></p>
+      <p><input [(ngModel)]="productname" type="text" name="delete product name" value="" placeholder="Product name" required></p>
+     
+      <p class="submit"><button (click)="DeleteProduct()" value="Delete Products">Delete Product</button></p>
+    </form>
+</div>
+<div class="fixed-footer">    
+</div>
